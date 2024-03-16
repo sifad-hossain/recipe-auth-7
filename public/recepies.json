@@ -1,0 +1,86 @@
+[
+  {
+    "recipe_image": "./image/food1.jpeg",
+    "recipe_id": "007",
+    "recipe_name": "Grilled Salmon with Lemon Herb Sauce",
+    "short_description": "Delicious grilled salmon fillets served with a zesty lemon herb sauce.",
+    "ingredients": [
+      "4 salmon fillets",
+      "2 lemons",
+      "50 g fresh herbs (such as parsley and dill)",
+      "2 cloves garlic"
+    ],
+    "preparing_time": "20 min",
+    "calories": "350 calories"
+  },
+  {
+    "recipe_image": "./image/food2.jpeg",
+    "recipe_id": "008",
+    "recipe_name": "Vegetable Paella",
+    "short_description": "A colorful and flavorful Spanish dish made with rice, vegetables, and saffron.",
+    "ingredients": [
+      "300 g rice",
+      "200 g bell peppers",
+      "150 g tomatoes",
+      "100 g peas"
+    ],
+    "preparing_time": "45 min",
+    "calories": "280 calories"
+  },
+  {
+    "recipe_image": "./image/food3.jpeg",
+    "recipe_id": "009",
+    "recipe_name": "Creamy Spinach and Artichoke Dip",
+    "short_description": "A creamy and cheesy dip packed with spinach, artichokes, and garlic.",
+    "ingredients": [
+      "200 g spinach",
+      "150 g artichoke hearts",
+      "100 g cream cheese",
+      "50 g grated Parmesan"
+    ],
+    "preparing_time": "35 min",
+    "calories": "220 calories"
+  },
+  {
+    "recipe_image": "./image/food4.jpeg",
+    "recipe_id": "010",
+    "recipe_name": "Teriyaki Beef Stir-Fry",
+    "short_description": "Tender beef strips stir-fried with colorful vegetables in a sweet and savory teriyaki sauce.",
+    "ingredients": [
+      "400 g beef sirloin",
+      "200 g broccoli",
+      "150 g carrots",
+      "100 ml teriyaki sauce"
+    ],
+    "preparing_time": "30 min",
+    "calories": "400 calories"
+  },
+  {
+    "recipe_image": "./image/food5.jpeg",
+    "recipe_id": "011",
+    "recipe_name": "Banana Chocolate Chip Pancakes",
+    "short_description": "Fluffy pancakes loaded with ripe bananas and chocolate chips, perfect for a decadent breakfast treat.",
+    "ingredients": [
+      "2 ripe bananas",
+      "150 g all-purpose flour",
+      "100 ml milk",
+      "50 g chocolate chips"
+    ],
+    "preparing_time": "25 min",
+    "calories": "380 calories"
+  },
+  {
+    "recipe_image": "./image/food6.jpeg",
+    "recipe_id": "012",
+    "recipe_name": "Greek Salad",
+    "short_description": "A refreshing salad featuring crisp lettuce, juicy tomatoes, cucumbers, olives, and tangy feta cheese.",
+    "ingredients": [
+      "200 g lettuce",
+      "150 g tomatoes",
+      "100 g cucumber",
+      "50 g feta cheese"
+    ],
+    "preparing_time": "15 min",
+    "calories": "200 calories"
+  }
+]
