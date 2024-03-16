@@ -2,7 +2,7 @@
   {
     "recipe_image": "./image/food1.jpeg",
     "recipe_id": "007",
-    "recipe_name": "Grilled Salmon with Lemon Herb Sauce",
+    "recipe_name": "Grilled Salmon",
     "short_description": "Delicious grilled salmon fillets served with a zesty lemon herb sauce.",
     "ingredients": [
       "4 salmon fillets",
@@ -30,7 +30,7 @@
   {
     "recipe_image": "./image/food3.jpeg",
     "recipe_id": "009",
-    "recipe_name": "Creamy Spinach and Artichoke Dip",
+    "recipe_name": "Creamy Spinach ",
     "short_description": "A creamy and cheesy dip packed with spinach, artichokes, and garlic.",
     "ingredients": [
       "200 g spinach",
@@ -58,7 +58,7 @@
   {
     "recipe_image": "./image/food5.jpeg",
     "recipe_id": "011",
-    "recipe_name": "Banana Chocolate Chip Pancakes",
+    "recipe_name": "Banana Chocolate ",
     "short_description": "Fluffy pancakes loaded with ripe bananas and chocolate chips, perfect for a decadent breakfast treat.",
     "ingredients": [
       "2 ripe bananas",

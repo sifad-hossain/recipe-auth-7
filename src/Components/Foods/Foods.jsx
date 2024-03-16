@@ -12,7 +12,7 @@ const Foods = ({handleAddToCook}) => {
     }, [])
     return (
         <div className="md:w-2/3">
-            <h2 className="4xl">Foods {foods.length}</h2>
+            
             <div className=' grid grid-cols-2'>
             {
                 foods.map(food => <Food
