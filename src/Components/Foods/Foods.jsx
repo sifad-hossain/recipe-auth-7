@@ -3,7 +3,7 @@ import { useState } from "react";
 import Food from "../Food/Food";
 import PropTypes from 'prop-types';
 
-const Foods = ({handleAddToCook}) => {
+const Foods = ({ handleAddToCook }) => {
     const [foods, setFoods] = useState([]);
     useEffect(() => {
         fetch('recepies.json')
@@ -12,16 +12,16 @@ const Foods = ({handleAddToCook}) => {
     }, [])
     return (
         <div className="md:w-2/3">
-            
+
             <div className=' grid grid-cols-2'>
-            {
-                foods.map(food => <Food
-                    key={food.recipe_id}
-                    food={food}
-                    handleAddToCook={handleAddToCook}
+                {
+                    foods.map(food => <Food
+                        key={food.recipe_id}
+                        food={food}
+                        handleAddToCook={handleAddToCook}
                     >
-                </Food>)
-            }
+                    </Food>)
+                }
             </div>
         </div>
     );

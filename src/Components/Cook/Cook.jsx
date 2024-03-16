@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import Cooks from '../Cooks/Cooks';
+import Current from '../Current/Current';
 
 const Cook = ({ cook }) => {
     return (
@@ -17,10 +18,10 @@ const Cook = ({ cook }) => {
                 </thead>
             </table>
             {
-                cook?.length > 0 && cook?.map(item => <Cooks key={item?.recipe_id}  item={item}></Cooks>)
+                cook?.length > 0 && cook?.map(item => <Cooks key={item?.recipe_id} item={item}></Cooks>)
             }
 
-
+            <Current></Current>
         </div>
 
     );
