@@ -7,19 +7,19 @@ const Food = ({ food, handleAddToCook }) => {
         <div className=' space-y-2 bottom-5  w-[390px] border-2 border-slate-300 mb-4'>
             <div className=' ml-4 mt-2'>
                 <img className=' rounded-2xl w-full h-[80%]' src={recipe_image} alt={`cover picture of the title {recepie_name}`} />
-                <h4 className=' text-2xl font-semibold mb-2'>{recipe_name}</h4>
+                <h4 className='text-2xl font-semibold mb-2 mt-2'>{recipe_name}</h4>
                 <p className='mb-2'>{short_description}</p>
-                <p className=' text-lg font-medium mb-2'>ingredients:{ingredients.length}</p>
+                <p className=' text-lg font-semibold mb-2 '>ingredients:{ingredients.length}</p>
                 <ul>
                     {ingredients.map(i => <li>{i}</li>)}
                 </ul>
                 <div className=' flex gap-5 mb-2'>
                     <div className='flex'>
-                        <img className=' w-[25px]' src="../../../public/image/timePlase.png" alt="" />
+                        <img className=' w-[25px]' src="../image/timePlase.png" alt="" />
                         <h3>{preparing_time}</h3>
                     </div>
                     <div className='flex'>
-                        <img className='w-[15px]' src="../../../public/image/fire.png" alt="" />
+                        <img className='w-[15px]' src="../image/fire.png" alt="" />
                         <p>{calories}</p>
                     </div>
                 </div>
