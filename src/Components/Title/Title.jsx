@@ -1,5 +1,3 @@
-
-
 const Title = () => {
     return (
         <div className="item-center w-[750px] mx-auto mt-10 mb-10">

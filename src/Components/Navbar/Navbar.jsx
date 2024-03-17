@@ -10,7 +10,7 @@ const Navbar = () => {
                     <a className="btn btn-ghost text-xl">Recipe Calories</a>
                 </div>
 
-                <div className=" mx-[300px] w-[600px]">
+                <div className=" mx-[280px]  ">
                     <ul className="menu menu-vertical lg:menu-horizontal  rounded-box gap-x-7">
                         <li>Home</li>
                         <li>Recipes</li>

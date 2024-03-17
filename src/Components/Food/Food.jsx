@@ -6,7 +6,7 @@ const Food = ({ food, handleAddToCook }) => {
     return (
         <div className=' space-y-2 bottom-5  w-[390px] border-2 border-slate-300 mb-4'>
             <div className=' ml-4 mt-2'>
-                <img className=' rounded-2xl' src={recipe_image} alt={`cover picture of the title {recepie_name}`} />
+                <img className=' rounded-2xl w-full h-[80%]' src={recipe_image} alt={`cover picture of the title {recepie_name}`} />
                 <h4 className=' text-2xl font-semibold mb-2'>{recipe_name}</h4>
                 <p className='mb-2'>{short_description}</p>
                 <p className=' text-lg font-medium mb-2'>ingredients:{ingredients.length}</p>
