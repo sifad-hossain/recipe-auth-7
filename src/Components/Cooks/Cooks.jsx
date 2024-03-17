@@ -5,11 +5,12 @@ const Cooks = ({ item, handleAddPrepare }) => {
     
     
     return (
-        <div className=' flex justify-around list-decimal'>
+        <div className=' flex justify-around list-decimal mb-4'>
             <li>{recipe_name}</li>
             <li>{preparing_time}</li>
             <li>{calories}</li>
-            <button onClick={() =>handleAddPrepare(recipe_id, item)} className='btn btn-accent'>preparing</button>
+            <button onClick={() =>handleAddPrepare(recipe_id, item)} className='btn btn-accent
+             text-base w-20 h-9  '>preparing</button>
 
         </div>
     );
