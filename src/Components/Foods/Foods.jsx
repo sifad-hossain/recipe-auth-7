@@ -18,7 +18,7 @@ const Foods = ({ handleAddToCook }) => {
                     foods.map(food => <Food
                         key={food.recipe_id}
                         food={food}
-                        handleAddToCook={handleAddToCook}
+                        handleAddToCook={handleAddToCook}                        
                     >
                     </Food>)
                 }
