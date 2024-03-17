@@ -2,25 +2,11 @@ import PropTypes from 'prop-types';
 import Cooks from '../Cooks/Cooks';
 import Current from '../Current/Current';
 
-
-
-
-
-
-
-
-
-const Cook = ({ cook, handleAddPrepare}) => {
-
-  
-
-
+const Cook = ({ cook, handleAddPrepare, current }) => {
 
     return (
-        <div className="md:w-1/3 items-center text-center  border-2 border-green-600">
+        <div className="md:w-1/3 items-center text-center  border-2 ">
             <h2 className=" border-b-2 mt-4 text-2xl font-semibold">Want to cook:{cook?.length}</h2>
-
-
             <table className=" w-[80%] mx-auto">
                 <thead>
                     <tr className="bg-blue-gray-100 text-gray-700">
@@ -31,10 +17,10 @@ const Cook = ({ cook, handleAddPrepare}) => {
                 </thead>
             </table>
             {
-                cook?.length > 0 && cook?.map(item  => <Cooks key={item?.recipe_id} handleAddPrepare={handleAddPrepare} item={item}></Cooks>)
+                cook?.length > 0 && cook?.map(item => <Cooks key={item?.recipe_id} handleAddPrepare={handleAddPrepare} item={item}></Cooks>)
             }
 
-            <Current></Current>
+            <Current current={current}></Current>
         </div>
 
     );

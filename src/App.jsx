@@ -5,8 +5,6 @@ import Cook from './Components/Cook/Cook'
 import Foods from './Components/Foods/Foods'
 import Navbar from './Components/Navbar/Navbar'
 import Title from './Components/Title/Title'
-
-
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -18,16 +16,16 @@ function App() {
   const [current, setCurrent] = useState([]);
 
 
-  const handleAddPrepare =(recipe_id, sifat) =>{
+  const handleAddPrepare = (recipe_id, sifat) => {
     const isExist = current.find(items => items.recipe_name == sifat.recipe_name)
     setCurrent([...current, sifat]);
     console.log('remove bookmark', recipe_id);
-    
+
     const remainig = cook.filter(coks => coks.recipe_id !== recipe_id)
     setCook(remainig);
-}
+  }
 
-  const handleAddToCook = ( food) => { 
+  const handleAddToCook = (food) => {
     const exist = cook.find(item => item.recipe_id == food.recipe_id)
     if (exist) {
       toast('Already exists ');
@@ -35,9 +33,10 @@ function App() {
     }
     const newCook = [...cook, food];
     setCook(newCook);
-  
   }
-  
+
+
+
   return (
     <>
       <Navbar></Navbar>
@@ -46,7 +45,7 @@ function App() {
       <div className=' md:flex  w-4/5 mx-auto'>
         <Foods handleAddToCook={handleAddToCook}></Foods>
         <ToastContainer></ToastContainer>
-        <Cook cook={cook} handleAddPrepare={handleAddPrepare}></Cook>
+        <Cook cook={cook} handleAddPrepare={handleAddPrepare} current={current}></Cook>
       </div>
     </>
   )
