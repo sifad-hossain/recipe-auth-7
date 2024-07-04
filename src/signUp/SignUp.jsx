@@ -1,6 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../Components/authProvider/AuthProvider';
 
 const SignUp = () => {
+
+    // 1.amr authProvider thik moto kaj kortace seita porikhar korar maddom hoilo ei ta
+    // const authInfo = useContext(AuthContext)
+    // console.log(authInfo);
+
+
+    // 2. console data gula dekhan pore registerUser ta ke dataStratucure kore fellam
+    const { registerUser } = useContext(AuthContext)
+    // console.log({ registerUser });
+
     const handleSubmit = (e) => {
         e.preventDefault()
         const name = e.target.name.value;
@@ -8,7 +19,10 @@ const SignUp = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         const confirmPassword = e.target.confirmPassword.value;
-        console.log(name,photo, email, password, confirmPassword);
+        console.log(name, photo, email, password, confirmPassword);
+
+        // 3.
+        registerUser(email, password)
     }
     return (
         <>
@@ -42,3 +56,38 @@ const SignUp = () => {
 };
 
 export default SignUp;
+
+
+
+/**
+ * import { createUserWithEmailAndPassword } from 'firebase/auth';
+import React, { createContext } from 'react';
+import { auth } from "../../firebase/Firebase.init"
+
+export const AuthContext = createContext(null)
+
+
+const AuthProvider = ({ children }) => {
+
+    const registerUser = (email, password) => {
+        createUserWithEmailAndPassword(auth, email, password)
+        // **eitar maddome ami user er data gulan dhekte pabo
+        .then(result => console.log(result))
+    }
+
+    const authInfo = {
+        registerUser
+    }
+    return (
+        <div>
+
+            <AuthContext.Provider value={authInfo}>
+                {children}
+            </AuthContext.Provider>
+
+        </div>
+    );
+};
+
+export default AuthProvider;
+ */

@@ -1,7 +1,9 @@
 import React from 'react';
 
 const SignIn = () => {
-    const handleSubmitLogin = (e) =>{
+
+
+    const handleSubmitLogin = (e) => {
         e.preventDefault()
         const email = e.target.email.value;
         const password = e.target.password.value;
@@ -9,7 +11,7 @@ const SignIn = () => {
     }
     return (
         <>
-            <div className='w-[40%] mx-auto border-2 border-cyan-400 p-4'>
+            <div className='w-[40%] mx-auto border-2 border-cyan-400 p-4 rounded-xl'>
                 <form onSubmit={handleSubmitLogin} className='space-y-4'>
                     <div>
                         <p>E-mail</p>

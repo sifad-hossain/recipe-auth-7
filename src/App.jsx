@@ -1,9 +1,8 @@
-import { useState } from 'react'
+import {  useState } from 'react'
 import './App.css'
 import Banner from './Components/Banner/Banner'
 import Cook from './Components/Cook/Cook'
 import Foods from './Components/Foods/Foods'
-import Navbar from './Components/Navbar/Navbar'
 import Title from './Components/Title/Title'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -11,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
+
 
   const [cook, setCook] = useState([]);
   const [current, setCurrent] = useState([]);
