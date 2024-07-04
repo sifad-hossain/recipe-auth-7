@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 
@@ -7,15 +8,16 @@ const Navbar = () => {
 
             <div className="navbar bg-base-100">
                 <div className="flex-1">
-                    <a className="btn btn-ghost text-xl">Recipe Calories</a>
+                    <Link to="/" className="btn btn-ghost text-xl">Recipe Calories</Link>
                 </div>
 
-                <div className=" mx-[280px]  ">
+                <div className=" mx-[250px]  ">
                     <ul className="menu menu-vertical lg:menu-horizontal  rounded-box gap-x-7">
-                        <li>Home</li>
+                        <Link to="/">Home</Link>
                         <li>Recipes</li>
                         <li>About</li>
-                        <li>Search</li>
+                        <Link to="/signIn">SignIn</Link>
+                        <Link to="/signUp">SignUp</Link>
                     </ul>
                 </div>
 
@@ -30,7 +32,7 @@ const Navbar = () => {
                                 <img className="bg-green-600" alt="Tailwind CSS Navbar component" src="https://i.ibb.co/rwt3WzB/login.png" />
                             </div>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>

@@ -39,7 +39,7 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
+      
       <Banner></Banner>
       <Title></Title>
       <div className=' md:flex  w-4/5 mx-auto'>
